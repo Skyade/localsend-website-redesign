@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download LocalSend - Share files to nearby devices</title>
+    <meta name="description" content="Download LocalSend for Windows, macOS, Linux, Android, and iOS. Fast, private, and offline file sharing.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png">
+    
+    <!-- Fonts: Inter & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="LocalSend Logo">
+                <span>LocalSend</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="download.html" class="active">Downloads</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://github.com/localsend/localsend" target="_blank" class="github-link">GitHub</a></li>
+            </ul>
+            <a href="download.html" class="btn btn-primary btn-sm">Download</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Downloads Hub -->
+        <section id="downloads" class="downloads section">
+            <div class="container">
+                <!-- Platform Tabs -->
+                <div class="tabs-container">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-platform="windows">Windows</button>
+                        <button class="tab-btn" data-platform="macos">macOS</button>
+                        <button class="tab-btn" data-platform="linux">Linux</button>
+                        <button class="tab-btn" data-platform="android">Android</button>
+                        <button class="tab-btn" data-platform="ios">iOS</button>
+                    </div>
+
+                    <div class="tab-content active" id="windows">
+                        <div class="grid grid-2">
+                            <div class="download-group">
+                                <h3>Binaries</h3>
+                                <div class="download-links">
+                                    <a href="https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-windows-x86-64.exe" class="card download-card">
+                                        <span>EXE (Installer)</span>
+                                        <span class="material-symbols-rounded">download</span>
+                                    </a>
+                                    <a href="https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-windows-x86-64.zip" class="card download-card">
+                                        <span>ZIP (Portable)</span>
+                                        <span class="material-symbols-rounded">download</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="download-group">
+                                <h3>Package Managers</h3>
+                                <div class="terminal-card card">
+                                    <div class="terminal-header">
+                                        <span class="terminal-title">Winget</span>
+                                        <button class="copy-btn" data-copy="winget install localsend"><span class="material-symbols-rounded">content_copy</span></button>
+                                    </div>
+                                    <code>winget install localsend</code>
+                                </div>
+                                <div class="terminal-card card">
+                                    <div class="terminal-header">
+                                        <span class="terminal-title">Chocolatey</span>
+                                        <button class="copy-btn" data-copy="choco install localsend"><span class="material-symbols-rounded">content_copy</span></button>
+                                    </div>
+                                    <code>choco install localsend</code>
+                                </div>
+                                <div class="terminal-card card">
+                                    <div class="terminal-header">
+                                        <span class="terminal-title">Scoop</span>
+                                        <button class="copy-btn" data-copy="scoop bucket add extras && scoop install localsend"><span class="material-symbols-rounded">content_copy</span></button>
+                                    </div>
+                                    <code>scoop install localsend</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="macos">
+                        <div class="grid grid-2">
+                            <div class="download-group">
+                                <h3>Binaries</h3>
+                                <div class="download-links">
+                                    <a href="https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-macos-x86-64.dmg" class="card download-card">
+                                        <span>DMG (Intel)</span>
+                                        <span class="material-symbols-rounded">download</span>
+                                    </a>
+                                    <a href="https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-macos-arm64.dmg" class="card download-card">
+                                        <span>DMG (Apple Silicon)</span>
+                                        <span class="material-symbols-rounded">download</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="download-group">
+                                <h3>Package Managers</h3>
+                                <div class="terminal-card card">
+                                    <div class="terminal-header">
+                                        <span class="terminal-title">Homebrew</span>
+                                        <button class="copy-btn" data-copy="brew install --cask localsend"><span class="material-symbols-rounded">content_copy</span></button>
+                                    </div>
+                                    <code>brew install --cask localsend</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="linux">
+                        <div class="grid grid-3">
+                            <div class="download-group">
+                                <h3>Universal</h3>
+                                <div class="download-links">
+                                    <a href="https://flathub.org/apps/details/org.localsend.localsend_app" target="_blank" class="card download-card">
+                                        <span>Flatpak</span>
+                                        <span class="material-symbols-rounded">open_in_new</span>
+                                    </a>
+                                    <a href="https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-linux-x86-64.AppImage" class="card download-card">
+                                        <span>AppImage</span>
+                                        <span class="material-symbols-rounded">download</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="download-group">
+                                <h3>Packages</h3>
+                                <div class="download-links">
+                                    <a href="https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-linux-x86-64.deb" class="card download-card">
+                                        <span>DEB (Debian/Ubuntu)</span>
+                                        <span class="material-symbols-rounded">download</span>
+                                    </a>
+                                    <a href="https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-linux-x86-64.rpm" class="card download-card">
+                                        <span>RPM (Fedora/RHEL)</span>
+                                        <span class="material-symbols-rounded">download</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="download-group">
+                                <h3>Community</h3>
+                                <div class="download-links">
+                                    <a href="https://aur.archlinux.org/packages/localsend-bin" target="_blank" class="card download-card">
+                                        <span>AUR (Arch)</span>
+                                        <span class="material-symbols-rounded">open_in_new</span>
+                                    </a>
+                                    <a href="https://search.nixos.org/packages?query=localsend" target="_blank" class="card download-card">
+                                        <span>Nix (NixOS)</span>
+                                        <span class="material-symbols-rounded">open_in_new</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="android">
+                        <div class="grid grid-2">
+                            <div class="download-group">
+                                <h3>Stores</h3>
+                                <div class="download-links">
+                                    <a href="https://play.google.com/store/apps/details?id=org.localsend.localsend_app" target="_blank" class="card download-card">
+                                        <span>Google Play</span>
+                                        <span class="material-symbols-rounded">open_in_new</span>
+                                    </a>
+                                    <a href="https://f-droid.org/en/packages/org.localsend.localsend_app/" target="_blank" class="card download-card">
+                                        <span>F-Droid</span>
+                                        <span class="material-symbols-rounded">open_in_new</span>
+                                    </a>
+                                    <a href="https://www.amazon.com/gp/product/B0BW6RY6YF" target="_blank" class="card download-card">
+                                        <span>Amazon Appstore</span>
+                                        <span class="material-symbols-rounded">open_in_new</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="download-group">
+                                <h3>Binary</h3>
+                                <div class="download-links">
+                                    <a href="https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-android-arm64.apk" class="card download-card">
+                                        <span>APK (Sideload)</span>
+                                        <span class="material-symbols-rounded">download</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="ios">
+                        <div class="container text-center">
+                            <a href="https://apps.apple.com/app/localsend/id1661733229" target="_blank" class="card download-card" style="max-width: 400px; margin: 0 auto;">
+                                <span>Download on the App Store</span>
+                                <span class="material-symbols-rounded">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">
+                        <img src="assets/logo.png" alt="LocalSend Logo">
+                        <span>LocalSend</span>
+                    </a>
+                    <p>Share files cross-platform, without the cloud. Open source and free.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="download.html">Download</a></li>
+                            <li><a href="https://web.localsend.org/" target="_blank">Web App</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="https://github.com/localsend/localsend" target="_blank">GitHub</a></li>
+                            <li><a href="https://discord.gg/GSRWmQNP87" target="_blank">Discord</a></li>
+                            <li><a href="https://reddit.com/r/localsend" target="_blank">Reddit</a></li>
+                            <li><a href="https://mastodon.social/@localsend" target="_blank">Mastodon</a></li>
+                            <li><a href="https://shop.localsend.org/en-eur" target="_blank">Merch</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="terms.html">Terms</a></li>
+                            <li><a href="imprint.html">Imprint</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022 - 2026 <a href="https://github.com/Tienisto" target="_blank">Tien Do Nam</a>. Licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" class="license-link">Apache 2.0</a></p>
+                <p class="attribution">Website redesigned by <a href="https://skyade.carrd.co/" target="_blank">Skyade</a>.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
