@@ -4,7 +4,6 @@
 
     <section class="changelog section pt-0">
         <div class="container">
-            <!-- Controls -->
             <div class="changelog-controls">
                 <div class="search-wrapper">
                     <span class="material-symbols-rounded">search</span>
@@ -22,12 +21,10 @@
                 </div>
             </div>
 
-            <!-- Loading state -->
             <div v-if="status === 'pending'" class="flex-center py-20">
                 <span class="material-symbols-rounded accent animate-spin">progress_activity</span>
             </div>
 
-            <!-- Error state -->
             <div v-else-if="status === 'error' || !versions" class="text-center py-20">
                 <span class="material-symbols-rounded text-muted mb-4" style="font-size: 48px;">error</span>
                 <p class="text-muted mb-6">{{ t('changelog.errorLoading') }}</p>
@@ -37,9 +34,7 @@
                 </a>
             </div>
 
-            <!-- Version list -->
             <div v-else>
-                <!-- No results -->
                 <div v-if="filteredVersions.length === 0" class="text-center py-16">
                     <span class="material-symbols-rounded text-muted mb-4" style="font-size: 48px;">search_off</span>
                     <p class="text-muted">{{ t('changelog.noResults') }}</p>
@@ -69,7 +64,6 @@
                     </article>
                 </div>
 
-                <!-- GitHub link -->
                 <div class="flex-center pt-10">
                     <a href="https://github.com/localsend/localsend/blob/main/app/assets/CHANGELOG.md" target="_blank" class="btn btn-secondary">
                         <span class="material-symbols-rounded mr-2">code</span>

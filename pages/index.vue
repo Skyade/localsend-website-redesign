@@ -1,33 +1,23 @@
 <template>
   <div :key="$route.fullPath">
-    <!-- Hero Section -->
     <SectionHero />
 
-    <!-- Stats Section -->
     <SectionStats />
 
-    <!-- Partners / Sponsors Section -->
     <SectionSponsors />
 
-    <!-- Features Bento Grid -->
     <SectionFeatures />
 
-    <!-- How It Works -->
     <SectionHowItWorks />
 
-    <!-- Community Hub -->
     <SectionCommunity />
 
-    <!-- Testimonials Section -->
     <SectionTestimonials />
 
-    <!-- Press / News Section -->
     <SectionPress />
 
-    <!-- Video & FAQ Section -->
     <SectionFaq />
 
-    <!-- Contact / CTA Section -->
     <SectionCta />
   </div>
 </template>
@@ -41,7 +31,6 @@ definePageMeta({
 const { t, locale } = useI18n();
 
 onMounted(() => {
-  // legacy redirects (remove after next store update)
   if (window.location.hash === "#/privacy") {
     navigateTo("/privacy");
   }

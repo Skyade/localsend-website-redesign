@@ -230,7 +230,6 @@ function handleClickOutside(event: MouseEvent) {
     font-size: 0.9rem;
 }
 
-/* Transitions */
 .slide-up-enter-active, .slide-up-leave-active {
     transition: all 0.3s ease;
 }

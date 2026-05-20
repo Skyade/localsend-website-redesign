@@ -1,7 +1,6 @@
 <template>
     <section id="faq" class="video-faq section">
         <div class="container">
-            <!-- YouTube Video -->
             <div class="video-container">
                 <iframe
                     :src="`https://www.youtube.com/embed/${youtubeVideoId}`"
@@ -11,7 +10,6 @@
                 </iframe>
             </div>
 
-            <!-- FAQ -->
             <div class="faq-container">
                 <h2 class="section-title text-center">{{ t('home.faq.title') }}</h2>
                 <div class="faq-list">
@@ -46,5 +44,4 @@ const faqs = computed(() => [
 </script>
 
 <style scoped>
-/* Redesign styles are handled by global style.css */
 </style>

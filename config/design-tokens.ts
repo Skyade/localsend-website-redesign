@@ -12,17 +12,17 @@ export const designTokens = {
     },
     spacing: {
         section: {
-            sm: '3rem',    // 48px
-            md: '4rem',    // 64px
-            lg: '6rem',    // 96px
-            xl: '8rem',    // 128px
+            sm: '3rem',
+            md: '4rem',
+            lg: '6rem',
+            xl: '8rem',
         },
     },
     radius: {
-        sm: '0.5rem',   // 8px
-        md: '0.75rem',  // 12px
-        lg: '1rem',     // 16px
-        xl: '1.5rem',   // 24px
+        sm: '0.5rem',
+        md: '0.75rem',
+        lg: '1rem',
+        xl: '1.5rem',
     },
     shadows: {
         glow: '0 0 50px -12px rgb(20 184 166 / 0.25)',

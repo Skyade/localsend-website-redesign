@@ -31,5 +31,4 @@
 </template>
 
 <script setup lang="ts">
-// Empty script setup is fine, or remove the block if empty
 </script>

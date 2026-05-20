@@ -1,13 +1,10 @@
 <template>
   <div>
-    <!-- Hero Section -->
     <PageHeader :title="t('download.title')"
       :description="t('download.subTitle', { os: selectedOS || 'your device' })" />
 
-    <!-- Download Content -->
     <section id="downloads" class="downloads section pt-0">
         <div class="container">
-            <!-- Platform Tabs -->
             <div class="tabs-container">
                 <div class="tabs-header">
                     <button v-for="os in OS" :key="os" 
@@ -20,7 +17,6 @@
 
                 <div v-if="selectedOS" class="tab-content active">
                     <div class="grid grid-2">
-                        <!-- Left Column: Stores & Binaries -->
                         <div class="download-group">
                             <div v-if="downloadMetadata[selectedOS].stores.length > 0" class="mb-12">
                                 <h3>{{ t("download.appStores") }}</h3>
@@ -46,7 +42,6 @@
                             </div>
                         </div>
 
-                        <!-- Right Column: Package Managers or QR -->
                         <div class="download-group">
                             <template v-if="downloadMetadata[selectedOS].packageManagers.length > 0">
                                 <h3>{{ t("download.packageManagers") }}</h3>
@@ -78,7 +73,6 @@
         </div>
     </section>
 
-    <!-- Snackbar -->
     <div class="snackbar" :class="{ 'snackbar-visible': copyToClipboardSnackbar }">
         <span class="material-symbols-rounded accent">check_circle</span>
         {{ t("download.copiedToClipboard") }}

@@ -25,7 +25,6 @@
             </div>
         </nav>
 
-        <!-- Mobile Menu -->
         <Transition name="fade">
             <div v-if="isMobileMenuOpen" class="mobile-menu">
                 <ul class="mobile-nav-links">
@@ -71,7 +70,6 @@ watch(() => useRoute().path, () => {
 </script>
 
 <style scoped>
-/* Redesign transition for mobile menu */
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }

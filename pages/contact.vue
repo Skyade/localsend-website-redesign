@@ -1,9 +1,7 @@
 <template>
   <div>
-    <!-- Hero Section -->
     <PageHeader :title="t('contact.title')" :description="t('contact.description')" />
 
-    <!-- Contact Content -->
     <section class="contact-page section pt-0">
         <div class="container">
             <div class="grid grid-2">

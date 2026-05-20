@@ -2,16 +2,10 @@
   <NuxtLayout>
     <NuxtPage />
     <AppFooter />
-    <!-- <div class="absolute flex gap-2" style="top: 20px; right: 20px">
-      <ColorMode />
-      <LanguageSwitcher />
-    </div> -->
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import LanguageSwitcher from "~/components/LanguageSwitcher.vue";
-import ColorMode from "~/components/ColorMode.vue";
 useHead({
   script: [
     {
@@ -20,7 +14,3 @@ useHead({
   ]
 })
 </script>
-
-<style>
-/* Page transitions and global styles are handled in assets/css/style.css */
-</style>

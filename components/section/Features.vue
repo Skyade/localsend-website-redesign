@@ -46,5 +46,4 @@ const features = computed(() => [
 </script>
 
 <style scoped>
-/* Redesign styles are handled by global style.css */
 </style>

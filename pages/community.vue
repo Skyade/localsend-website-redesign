@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Hero -->
     <section class="community-hero">
       <div class="container">
         <h2>{{ t('community.getInvolved') }}</h2>
@@ -8,7 +7,7 @@
         <div class="social-grid">
           <a href="https://discord.gg/GSRWmQNP87" target="_blank" class="social-card discord-card">
             <div class="social-icon">
-              <span class="material-symbols-rounded">forum</span>
+              <img src="/img/social/discord.svg" alt="" aria-hidden="true">
             </div>
             <div class="social-content">
               <span class="social-link">{{ t('community.discord') }} →</span>
@@ -16,7 +15,7 @@
           </a>
           <a href="https://reddit.com/r/localsend" target="_blank" class="social-card reddit-card">
             <div class="social-icon">
-              <span class="material-symbols-rounded">chat</span>
+              <img src="/img/social/reddit.svg" alt="" aria-hidden="true">
             </div>
             <div class="social-content">
               <span class="social-link">{{ t('community.reddit') }} →</span>
@@ -26,7 +25,6 @@
       </div>
     </section>
 
-    <!-- Get Help -->
     <section class="community-section">
       <div class="container">
         <h2>{{ t('community.getHelp') }}</h2>
@@ -42,7 +40,6 @@
       </div>
     </section>
 
-    <!-- Contribute -->
     <section class="community-section">
       <div class="container">
         <h2>{{ t('community.contribute') }}</h2>

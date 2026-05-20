@@ -5,7 +5,6 @@
             <p class="section-subtitle">{{ t('home.testimonials.description') }}</p>
             
             <div class="testimonial-scroller">
-                <!-- Row 1: Left to Right -->
                 <div class="testimonial-row ltr">
                     <div class="testimonial-track">
                         <div v-for="(review, i) in [...row1, ...row1]" :key="`row1-${i}`" class="card testimonial-card">
@@ -18,7 +17,6 @@
                     </div>
                 </div>
 
-                <!-- Row 2: Right to Left -->
                 <div class="testimonial-row rtl">
                     <div class="testimonial-track">
                         <div v-for="(review, i) in [...row2, ...row2]" :key="`row2-${i}`" class="card testimonial-card">
@@ -31,7 +29,6 @@
                     </div>
                 </div>
 
-                <!-- Row 3: Left to Right (Faster) -->
                 <div class="testimonial-row ltr fast">
                     <div class="testimonial-track">
                         <div v-for="(review, i) in [...row3, ...row3]" :key="`row3-${i}`" class="card testimonial-card">
@@ -74,5 +71,4 @@ const row3 = reviews.slice(10);
 </script>
 
 <style scoped>
-/* Redesign styles are handled by global style.css */
 </style>

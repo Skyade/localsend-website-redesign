@@ -28,5 +28,4 @@ const { t } = useI18n();
 </script>
 
 <style scoped>
-/* Redesign styles are handled by global style.css */
 </style>
